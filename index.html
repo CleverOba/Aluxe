@@ -1,0 +1,1715 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>A:LUXE - Premium Footwear & Apparel</title>
+<base href="https://www.shoelayers.com/" />
+<meta name="description" content="We are FINOCITY LIMITED founded in October 2013 to bring world class quality products into the Nigeria market. Our focus are work and safety shoes, dress shoes, casual,belts,bags,CLOTH and accessories for men, women and children. We source from top rated global brands. We are the official Distributor of Caterpillar Apparel in Nigeria." />
+<meta name="keywords" content="Fashion, Men, Women, Apparel, Shoes, Accessories, Jewelry, Watch, Shoes in Nigeria, Belts in Nigeria, Accessories in Nigeria, Female shoes, Female Bags, Female Accessories, Men, Women, shoes, bag, children,clothing,fashion" />
+<meta name="google-site-verification" content="hhsjXBcibY4ulV79IotFWcZRsUJnWMLhCvTO1vdBYDA" />
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+<!-- CSS Libraries -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- JavaScript Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Styles -->
+<style>
+:root {
+    /* Main Color Palette */
+    --primary: #2a3990;
+    --primary-light: #5a69c0;
+    --primary-dark: #001a62;
+    --secondary: #ff6b4a;
+    --secondary-light: #ff9b78;
+    --secondary-dark: #c53a1f;
+    --dark: #212121;
+    --light: #f8f8f8;
+    --white: #ffffff;
+    --gray: #9e9e9e;
+    --gray-light: #e0e0e0;
+    
+    /* Typography */
+    --title-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+    
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+    
+    /* Elevation */
+    --shadow-1: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    --shadow-2: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    --shadow-3: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-circle: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--primary-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-md) 0;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-lg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow-1);
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    box-shadow: var(--shadow-2);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-dark);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-large {
+    padding: var(--space-md) var(--space-xl);
+    font-size: 1.1rem;
+}
+
+/* Layout Components */
+
+/* Header / Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-1);
+}
+
+.header-scrolled {
+    background-color: var(--white);
+    box-shadow: var(--shadow-2);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo-text {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-left: var(--space-sm);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 var(--space-md);
+}
+
+.nav-links a {
+    font-weight: 500;
+    position: relative;
+    padding: var(--space-xs) 0;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.mobile-nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+    margin-left: var(--space-lg);
+}
+
+.search-input {
+    padding: var(--space-xs) var(--space-md);
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius-sm);
+    font-family: var(--body-font);
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    width: 250px;
+    border-color: var(--primary);
+    outline: none;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: var(--space-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    margin-top: 70px;  /* Compensate for fixed header */
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--primary-dark);
+    line-height: 1.2;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-lg);
+    color: var(--dark);
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+.hero .btn {
+    animation: fadeInUp 1s ease 0.6s both;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: 10%;
+    display: flex;
+    z-index: 3;
+}
+
+.slider-control {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-circle);
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--space-md);
+    cursor: pointer;
+    box-shadow: var(--shadow-1);
+    transition: all 0.3s ease;
+}
+
+.slider-control:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Product Categories Section */
+.categories {
+    padding: var(--space-xxl) 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xxl);
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: var(--space-md);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--gray);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.category-card {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    transition: all 0.3s ease;
+    height: 300px;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2);
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05);
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--space-lg);
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.category-overlay h3 {
+    color: var(--white);
+    margin-bottom: var(--space-xs);
+    font-size: 1.5rem;
+}
+
+.category-overlay p {
+    color: var(--light);
+    margin-bottom: var(--space-md);
+}
+
+.category-overlay .btn {
+    background-color: var(--secondary);
+    padding: var(--space-xs) var(--space-md);
+}
+
+/* Product Showcase Section */
+.products {
+    padding: var(--space-xxl) 0;
+    background-color: var(--light);
+}
+
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--gray-light);
+    flex-wrap: wrap;
+}
+
+.product-tab {
+    padding: var(--space-md) var(--space-lg);
+    margin: 0 var(--space-sm);
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.product-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.product-tab.active {
+    color: var(--primary);
+}
+
+.product-tab.active::after {
+    width: 100%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.product-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: var(--shadow-1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2);
+}
+
+.product-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-badge {
+    position: absolute;
+    top: var(--space-md);
+    left: 0;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.8rem;
+    border-top-right-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+}
+
+.product-details {
+    padding: var(--space-md);
+}
+
+.product-title {
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.product-category {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+.product-price {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-original {
+    color: var(--gray);
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-left: var(--space-sm);
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-md);
+}
+
+.cart-btn, .quickview-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-light);
+    color: var(--dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover, .quickview-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.rating {
+    display: flex;
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+/* Collections Banner */
+.collections {
+    padding: var(--space-xxl) 0;
+    background-color: var(--white);
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: var(--space-md);
+}
+
+.collection-item {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.collection-item:nth-child(1) {
+    grid-column: 1 / 7;
+    grid-row: 1 / 3;
+}
+
+.collection-item:nth-child(2) {
+    grid-column: 7 / 13;
+    grid-row: 1 / 2;
+}
+
+.collection-item:nth-child(3) {
+    grid-column: 7 / 13;
+    grid-row: 2 / 3;
+}
+
+.collection-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.collection-item:hover .collection-image {
+    transform: scale(1.05);
+}
+
+.collection-content {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: var(--space-lg);
+    color: var(--white);
+    z-index: 2;
+}
+
+.collection-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xs);
+}
+
+.collection-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-md);
+}
+
+.collection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0));
+}
+
+/* Brands Section */
+.brands {
+    padding: var(--space-xxl) 0;
+    background-color: var(--light);
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-logo {
+    width: 120px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    margin: var(--space-md);
+}
+
+.brand-logo:hover {
+    opacity: 1;
+}
+
+/* Services Section */
+.services {
+    padding: var(--space-xxl) 0;
+    background-color: var(--white);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+
+.service-card {
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    background-color: var(--light);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: var(--space-md);
+}
+
+.service-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+}
+
+.service-description {
+    color: var(--gray);
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: var(--space-xxl) 0;
+    background-color: var(--primary-dark);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('https://images.unsplash.com/photo-1590874103328-eac38a683ce7');
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter-content {
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter h2 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+}
+
+.newsletter p {
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    padding: var(--space-md);
+    border: none;
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    font-family: var(--body-font);
+}
+
+.newsletter-input:focus {
+    outline: none;
+}
+
+.newsletter-btn {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 0 var(--space-lg);
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: var(--space-xxl) 0 var(--space-md);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: var(--space-md);
+}
+
+.footer-about p {
+    margin-bottom: var(--space-md);
+}
+
+.footer h4 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-sm);
+}
+
+.footer-links a {
+    color: var(--gray-light);
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+    padding-left: var(--space-xs);
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--space-sm);
+}
+
+.contact-icon {
+    margin-right: var(--space-sm);
+    color: var(--secondary);
+}
+
+.social-icons {
+    display: flex;
+    margin-top: var(--space-md);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-circle);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--space-sm);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: var(--gray);
+}
+
+/* Loading Animation */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.loading-spinner:before,
+.loading-spinner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-circle);
+    border: 3px solid transparent;
+}
+
+.loading-spinner:before {
+    border-top-color: var(--primary);
+    animation: spin 1s linear infinite;
+}
+
+.loading-spinner:after {
+    border-left-color: var(--secondary);
+    animation: spin 0.5s linear infinite;
+}
+
+.loading-logo {
+    margin-bottom: var(--space-md);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 0.5s;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-circle);
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-1);
+    z-index: 99;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        left: 5%;
+        max-width: 450px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .collections-grid {
+        grid-template-rows: repeat(3, 200px);
+    }
+    
+    .collection-item:nth-child(1) {
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+    }
+    
+    .collection-item:nth-child(2) {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+    
+    .collection-item:nth-child(3) {
+        grid-column: 7 / 13;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-md) 0;
+        box-shadow: var(--shadow-1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-links li {
+        margin: var(--space-sm) 0;
+    }
+    
+    .search-container {
+        margin-left: 0;
+    }
+    
+    .hero {
+        height: auto;
+        padding: var(--space-xxl) 0;
+    }
+    
+    .hero-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        max-width: 100%;
+        text-align: center;
+        padding: var(--space-lg);
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        clip-path: none;
+        margin-top: var(--space-lg);
+    }
+    
+    .slider-controls {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: var(--space-md);
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .collections-grid {
+        grid-template-rows: repeat(3, 180px);
+    }
+    
+    .collection-item:nth-child(1),
+    .collection-item:nth-child(2),
+    .collection-item:nth-child(3) {
+        grid-column: 1 / 13;
+    }
+    
+    .collection-item:nth-child(1) {
+        grid-row: 1 / 2;
+    }
+    
+    .collection-item:nth-child(2) {
+        grid-row: 2 / 3;
+    }
+    
+    .collection-item:nth-child(3) {
+        grid-row: 3 / 4;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-input, .newsletter-btn {
+        width: 100%;
+        border-radius: var(--radius-sm);
+        margin-bottom: var(--space-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .product-tabs {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: var(--space-sm);
+    }
+    
+    .product-tab {
+        white-space: nowrap;
+    }
+}
+</style>
+
+<link rel="icon" href="https://media-hosting.imagekit.io/105f8237e29a460e/1000421446.jpg?Expires=1839237051&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qAtRisro4iVTN2~irkQ0MWZOJfiQvARvWFqJ-HHJt9bPOeDbIyY5sZyvMOeZKmqaZ-0mJXwlLUgIdc5MHkjsWxVOlWBYf~YkyZtzN6UlC7sHjtE9j6kVskAERVKfgSFQhAUe7QyTpY9qX5QXcnhDcgCDikUZUCsXDlwbUhOMQYouXZtR-TK-X7DTx0g8eeK82M2EGDScP21j5r9fjgMvhe66mB3fbIdJhdiC8S1TSsvKSWyjT7FwyFoxTF42JAoHIinA4VQgZFPIaU9vBW1SsQARTNYeXws5Qt--LGaGwahTK0eeMF6YEh5bCmSLMTycDMK0Vi5nt4pwMLAvdWY9FQ__" />
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-overlay">
+        <div class="loading-logo">
+            <img src="https://media-hosting.imagekit.io/105f8237e29a460e/1000421446.jpg?Expires=1839237051&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qAtRisro4iVTN2~irkQ0MWZOJfiQvARvWFqJ-HHJt9bPOeDbIyY5sZyvMOeZKmqaZ-0mJXwlLUgIdc5MHkjsWxVOlWBYf~YkyZtzN6UlC7sHjtE9j6kVskAERVKfgSFQhAUe7QyTpY9qX5QXcnhDcgCDikUZUCsXDlwbUhOMQYouXZtR-TK-X7DTx0g8eeK82M2EGDScP21j5r9fjgMvhe66mB3fbIdJhdiC8S1TSsvKSWyjT7FwyFoxTF42JAoHIinA4VQgZFPIaU9vBW1SsQARTNYeXws5Qt--LGaGwahTK0eeMF6YEh5bCmSLMTycDMK0Vi5nt4pwMLAvdWY9FQ__" alt="A:LUXE" height="80">
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="https://media-hosting.imagekit.io/105f8237e29a460e/1000421446.jpg?Expires=1839237051&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qAtRisro4iVTN2~irkQ0MWZOJfiQvARvWFqJ-HHJt9bPOeDbIyY5sZyvMOeZKmqaZ-0mJXwlLUgIdc5MHkjsWxVOlWBYf~YkyZtzN6UlC7sHjtE9j6kVskAERVKfgSFQhAUe7QyTpY9qX5QXcnhDcgCDikUZUCsXDlwbUhOMQYouXZtR-TK-X7DTx0g8eeK82M2EGDScP21j5r9fjgMvhe66mB3fbIdJhdiC8S1TSsvKSWyjT7FwyFoxTF42JAoHIinA4VQgZFPIaU9vBW1SsQARTNYeXws5Qt--LGaGwahTK0eeMF6YEh5bCmSLMTycDMK0Vi5nt4pwMLAvdWY9FQ__" alt="A:LUXE">
+                    <span class="logo-text">A:LUXE</span>
+                </div>
+                
+                <button class="mobile-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Style with Premium Footwear</h1>
+            <p>Discover world-class quality products from top global brands. From work & safety shoes to dress shoes and casual styles.</p>
+            <a href="#" class="btn btn-large">Shop Collection</a>
+        </div>
+        
+        <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1556048219-bb6978360b84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');"></div>
+        
+        <div class="slider-controls">
+            <div class="slider-control prev">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="slider-control next">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Product Showcase Section -->
+    <section class="products" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Product Showcase</h2>
+                <p>Explore our curated collections of premium footwear for every occasion.</p>
+            </div>
+            
+            <div class="product-tabs">
+                <div class="product-tab active" data-tab="page1">Page 1</div>
+                <div class="product-tab" data-tab="page2">Page 2</div>
+            </div>
+            
+            <div class="product-content active" id="page1">
+                <div class="product-grid">
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://media-hosting.imagekit.io/bf6deda89ec14c1a/1000422778.jpg?Expires=1839343643&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Lj1tNSzVO7hTmzqZAdU87dXNQ7JboORpAC8aeMR8wD8YkmAhf~22kmfXQe5nlgfAv~Vv5kw~bl6oAeju3b1RXXTmZ8fl9S5ihzzxz-DuOafgNRY~fk5HG4D3h5Mpt7vPa5M6P9uvv2YwmKCzWc0qdpPWiRjKKehcYA~HR-y-Hk~Tb9EVQIK4EHtSUAMKNNyrpVPd1tIAQDGPa8OdnJNLvqJmM2yBZKulBumlOGp6ZwVjtVYPHkeBG2Ah6cx0avj66MonEhNjd9qOu8Dd0GRaaH1QS2Qf-Nke1NUHjfQ9ZblT6q9CTC0nS8YM9cEl~nQMlDUBJlMePSDOPgHtDoIpsA__" alt="Product 1" class="product-image">
+                        <span class="product-badge">New</span>
+                        <div class="product-details">
+                            <h3 class="product-title">Urban Executive</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                               ₦62,000
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://media-hosting.imagekit.io/b44def9230de4dd7/1000422776.jpg?Expires=1839344146&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=itsQr4gov-HQy8va4p7yJSiNjYVSL2cC64jNEBNKsohp8Y8zR52bMOnDCKNdrnv2LibAckdbbaM4wXSRqgbVOHMmWkBHgdf7wt0ka8uOJ1v~FCfFWVI~y3JtQD82~g6sP5K3tvlR9kbFALHikQkDalDrJIS2-R1IgLf9q7ecF59goneDJgV5gGZHXIupeLddaZ9Thb9mtQhT235UF1MIqfzLsY0tpAixL7yyvHm37rKgRhMbLjgzBG9YC5h9qUBYd1UeY57cjMeUJP37fwrSEzSOOaQe8fm5eiXudfGH9zB4BuCNhkhU5-3XVJoZJZIGE2sKsN0PUTgOcXfuERS4pQ__" alt="Product 2" class="product-image">
+                        <div class="product-details">
+                            <h3 class="product-title">Casual Comfort</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦55,000
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://media-hosting.imagekit.io/e625810dccc24a3d/1000422773.jpg?Expires=1839344566&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=W0J4V29boFlQddCdYSh8~lvKd1QThfNDRFJRiXcZ~N6U727Xcx3H0y8AjhWLvoZvf4R0X82223Y6CHQX~D0FndeHa18FxfOQGqhN2iQiAwQdAO4X80NoZBBEOKjfFjYFk7pfyI3WNB3iz-XSc6ReF-Ze3NSxQrxfDpUKLzO~ABwwJuOv7FxS-w-ziQCCefroX4PRf8bA94~7dHXI0xij0zQVJCYB9~BIHdHbEata2l-c8mIptLGyrr78BFDzpgZ754LNIYRjcGgHH76IejUKo5zrU5-hOVSzSVyXpjTajKbV7kJeZ5vnloptSrtX2eQ~QbD8ZHkoLdVPgQYx7lgYSA__" alt="Product 3" class="product-image">
+                        <span class="product-badge">Sale</span>
+                        <div class="product-details">
+                            <h3 class="product-title">Athletic Pro</h3>
+                            <div class="product-category">Sports Shoes</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦48,500
+                                <span class="product-original">₦60,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://media-hosting.imagekit.io/2bfa2d9155884884/1000422768.jpg?Expires=1839344818&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=lGQJynA719zAvGuqUKp1Mo2Sm2H-5MlN5P2ousBRyX4PorudlUK8XIfRd-xghJzqYj89vfsetfbuYwLn-LLleQB2sxgb9M2bz0ipP3RurSTryxjuZrtpBmR0yo1pGaQA2uv4RkZivUU~8TMm-w6BCF5ixCcXFzhvpPuHFv4UmQbL3nWjxIG5O9wSQU8P64zdO0O02QqQAdrxP5CokjmfmH9PgC4HomsPpXREtPAGYdj2zj525ZvDo3pe-c5OMgd5PTtmIW1Gx29GBkUGyM7prGeQ6fuz5MlQh6HZpTlFb5okxKsq5OPZelrFKqNzNceIRPUC3P5yE~KePNOh8xFPHA__" alt="Product 4" class="product-image">
+                        <div class="product-details">
+                            <h3 class="product-title">Explorer Hiking</h3>
+                            <div class="product-category">Outdoor Footwear</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦75,000
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-content" id="page2" style="display: none;">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://media-hosting.imagekit.io/f5c71178233f40c1/1000422886.jpg?Expires=1839347760&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fvVdABErwXjmOCXCW5HcIjZCpuL1GJmjVO2iajdjqTbsxVGddO-pqCcHmhhmvP1~xdy8A7jWxmzkYECqCDKPYnv0RLN-d8sTKmFZNyclD1RKPGoKekHMsZOsNOJumNjopHZagbsKS0KLQpI7gAaRvunTx3pOQRqY23MC97Mr~m9-pqUqM6eLSu-pry7Xoeq8mgsPp4G4GM4hb~mOGNBBWJIwLUTtcu1eXEmuNN8S4cUpwjHxD~9U6RyH0YrMomWJrVsWYiVWLhl75797~91chckYcIoT0zX-HZOsfSdAnuo-iP7Sco6iD-2pGBIkQ2FITdBA02Sd9zmXS6BmuXoZFg__" alt="Product 5" class="product-image">
+                        <div class="product-details">
+                            <h3 class="product-title">Classic Loafers</h3>
+                            <div class="product-category">Men's Formal Wear</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦67,000
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="https://media-hosting.imagekit.io/732b1c5fb5c043bc/1000422898.jpg?Expires=1839350770&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=amB5ef1Wf-8ZaPk2BI7AhEtw-OiHBQfygA4ofLSr~J1XeJnH52VHNRxXmli8kQz5Zp8nKUq7DytIQ9bbi5SrAn1PYrLFD7IWFf9AKTI-nF64~Lg980LhwGlG56jqhWVA~y0ip-PZ3XDi2VZniWb9DuJccQRNvUsCeUvARLDs3V4kj450njXTjgOZTwUM-AURqOJ8OpgWG5xGGtUCXGUoVMGhtqjdhoBoRVZKpIvWPIxMuILKt6XGN92tiRcnEifp0-IdrwsEurQcIB1MsvjvvqtyZWjHbxWcjCzEvG5jKUbFnAOkgiXa5qwy4wLZ4xKqYFzWTesNwtqG5SScgFbJuA__" alt="Product 6" class="product-image">
+                        <span class="product-badge">New</span>
+                        <div class="product-details">
+                            <h3 class="product-title">Stylish Sneakers</h3>
+                            <div class="product-category">Women's Casual</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦55,500
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                                          <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="https://media-hosting.imagekit.io/8ba8e4dee35d42aa/1000422889.jpg?Expires=1839348825&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eBtLcsNGlrWOqo1Tf1CtbeQCky9SuAROqNOJaY37V4AUEld6KvFAsRRIcMfUb9NrTwv2vmAxJN5E8QyFrgVX45znFiRBPHvp8mwQxG3VWQKId2pyXAQKCVru5nfRjiF5QehUgV3b6sklzMyltrqPpzE0ljjYknEyBKyozO9fMSA0CHJ3Fu1hm-keXvPRp-iVVU4gCN7KOQIR9-8iIbS2IDAHEVJeR7RlKLK-r5a0u7Z-aa8WoNAA4nGUTBGCaPhSagXHSN-BgDuEqboaHJDb1IpAM6hD9ZADG9O-ldVKr-h3jMF0448Jzl2~Ld8iFfxFpr6gBVItUTwqNsyrjudBPA__" alt="Product 7" class="product-image">
+                        <div class="product-details">
+                            <h3 class="product-title">Safety Work Boots</h3>
+                            <div class="product-category">Industrial Safety</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦82,000
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                <div class="cart-btn">
+                                                                    <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="https://media-hosting.imagekit.io/13704132cc0f4b2b/1000422892.jpg?Expires=1839348946&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Lbi7GJOVqvrefX7R8nqzAf~LUUJi7X4ah9~0rUaoQI5dN-t7w2rryF032iWaJM3ISeY3va0NLc56PvaUEcdUro-9LXtiumBolhXE6QHVd7cI3qrGl81Y4cgmi5bmf-RJ-pKkBT4jfIyg5hCKakC8vedWe-FL6GAicfossUlRbuypb~vNs-34LSA~HoaO8uIF9TSxvCtyIlblVpt1QZtM2KhCiDrdwCNX~cklmSuocThDH53pAELr70xxiicMQt1ky6cZB8iOhDCPVUtiZ5CG298Wstj
+
+ERROR: Error in streaming API call: 
+
+
+
+[Response incomplete. Requesting continuation...]
+
+KpaFB4AIe6hO3w~vi0oBCBLN7JIvE11d29Rm856FdLA7K6kk9z4UvN6ET1w__" alt="Product 8" class="product-image">
+                        <span class="product-badge">Sale</span>
+                        <div class="product-details">
+                            <h3 class="product-title">Elegant Heels</h3>
+                            <div class="product-category">Women's Formal</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">
+                                ₦52,000
+                                <span class="product-original">₦62,000</span>
+                            </div>
+                            <div class="product-actions">
+                                <a href="#" class="btn btn-outline">View Details</a>
+                                <div class="cart-btn">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="quickview-btn">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Banner -->
+    <section class="collections" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Collections</h2>
+                <p>Discover our exclusive collections designed for every lifestyle.</p>
+            </div>
+            
+            <div class="collections-grid">
+                <div class="collection-item" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzJTIwc3RvcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="Premium Collection" class="collection-image">
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Premium Collection</h3>
+                        <p class="collection-subtitle">Luxury footwear crafted with precision</p>
+                        <a href="#" class="btn">Explore Now</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item" data-aos="fade-left" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="Work & Safety" class="collection-image">
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Work & Safety</h3>
+                        <p class="collection-subtitle">Durable protection for professionals</p>
+                        <a href="#" class="btn">Explore Now</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXMlMjBjb2xsZWN0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Casual Comfort" class="collection-image">
+                    <div class="collection-overlay"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Casual Comfort</h3>
+                        <p class="collection-subtitle">Everyday style that feels good</p>
+                        <a href="#" class="btn">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Brands</h2>
+                <p>We partner with the world's leading footwear brands to bring you quality and style.</p>
+            </div>
+            
+            <div class="brand-logos">
+                <img src="https://www.shoelayers.com/image/cache/catalog/brands/b2-130x87.png" alt="Adidas" class="brand-logo" data-aos="zoom-in">
+                <img src="https://www.shoelayers.com/image/cache/catalog/brands/id5-brand7-130x87.jpg" alt="CAT" class="brand-logo" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://www.shoelayers.com/image/cache/catalog/brands/b5-130x87.png" alt="Ralph Lauren" class="brand-logo" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://www.shoelayers.com/image/cache/catalog/brands/b6-130x87.png" alt="Nike" class="brand-logo" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://www.shoelayers.com/image/cache/catalog/brands/Saucony-logo-130x87.jpg" alt="Saucony" class="brand-logo" data-aos="zoom-in" data-aos-delay="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" data-aos="fade-up">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="service-title">Fast Shipping</h3>
+                    <p class="service-description">We deliver to your doorstep across all west African countries.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="service-title">Free Click & Collect</h3>
+                    <p class="service-description">Buy online and pick up in our store. Fast, simple and free.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Save & Shop Safely</h3>
+                    <p class="service-description">Shop any of our products at great deals with secured end-to-end SSL encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" data-aos="fade-up">
+        <div class="newsletter-bg"></div>
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get instant updates</h2>
+                <p>Stay informed about great and exciting offers, new arrivals and trends.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="https://media-hosting.imagekit.io/105f8237e29a460e/1000421446.jpg?Expires=1839237051&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qAtRisro4iVTN2~irkQ0MWZOJfiQvARvWFqJ-HHJt9bPOeDbIyY5sZyvMOeZKmqaZ-0mJXwlLUgIdc5MHkjsWxVOlWBYf~YkyZtzN6UlC7sHjtE9j6kVskAERVKfgSFQhAUe7QyTpY9qX5QXcnhDcgCDikUZUCsXDlwbUhOMQYouXZtR-TK-X7DTx0g8eeK82M2EGDScP21j5r9fjgMvhe66mB3fbIdJhdiC8S1TSsvKSWyjT7FwyFoxTF42JAoHIinA4VQgZFPIaU9vBW1SsQARTNYeXws5Qt--LGaGwahTK0eeMF6YEh5bCmSLMTycDMK0Vi5nt4pwMLAvdWY9FQ__" alt="A:LUXE" class="footer-logo">
+                    <p>We are FINOCITY LIMITED founded in October 2013 to bring world class quality products into the Nigeria market. Our focus are work and safety shoes, dress shoes, casual,belts,bags,CLOTH and accessories for men, women and children.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/a.luxe_footwear/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Men's Shoes</a></li>
+                        <li><a href="#">Women's Shoes</a></li>
+                        <li><a href="#">Work & Safety</a></li>
+                        <li><a href="#">Casual Wear</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <p>A:LUXE Nigeria<br>Lagos, Nigeria</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <p><a href="tel:+234 906 945 1953">(+234) 906 945 1953</a></p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <p><a href="mailto:info@adellastore814@gmail.com">info@adellastore814@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 A:LUXE - A:LUXE.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Loading Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            setTimeout(function() {
+                document.getElementById('loading-overlay').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loading-overlay').style.display = 'none';
+                }, 500);
+            }, 1500);
+            
+            // Header scroll class
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    document.querySelector('.header').classList.add('header-scrolled');
+                    document.querySelector('.back-to-top').classList.add('show');
+                } else {
+                    document.querySelector('.header').classList.remove('header-scrolled');
+                    document.querySelector('.back-to-top').classList.remove('show');
+                }
+            });
+            
+            // Mobile Navigation Toggle
+            document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.toggle('show');
+                if (document.querySelector('.nav-links').classList.contains('show')) {
+                    this.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    this.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+            
+            // Product Tabs
+            const tabButtons = document.querySelectorAll('.product-tab');
+            const tabContents = document.querySelectorAll('.product-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tab = button.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.style.display = 'none');
+                    
+                    // Add active class to clicked button and show content
+                    button.classList.add('active');
+                    document.getElementById(tab).style.display = 'block';
+                });
+            });
+            
+            // Hero Slider
+            let currentSlide = 0;
+            const heroImages = [
+                'https://images.unsplash.com/photo-1556048219-bb6978360b84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+                'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+                'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+            ];
+            
+            const heroImage = document.querySelector('.hero-image');
+            const prevButton = document.querySelector('.slider-control.prev');
+            const nextButton = document.querySelector('.slider-control.next');
+            
+            function changeSlide(direction) {
+                if (direction === 'next') {
+                    currentSlide = (currentSlide + 1) % heroImages.length;
+                } else {
+                    currentSlide = (currentSlide - 1 + heroImages.length) % heroImages.length;
+                }
+                
+                heroImage.style.opacity = '0';
+                setTimeout(() => {
+                    heroImage.style.backgroundImage = `url(${heroImages[currentSlide]})`;
+                    heroImage.style.opacity = '1';
+                }, 300);
+            }
+            
+            prevButton.addEventListener('click', () => changeSlide('prev'));
+            nextButton.addEventListener('click', () => changeSlide('next'));
+            
+            // Auto slide
+            setInterval(() => changeSlide('next'), 5000);
+            
+            // Back to top
+            document.querySelector('.back-to-top').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Newsletter form submission
+            document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('.newsletter-input').value;
+                if (email) {
+                    alert('Thank you for subscribing to our newsletter!');
+                    this.reset();
+                } else {
+                    alert('Please enter your email address.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
